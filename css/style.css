@@ -1,0 +1,277 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    height: 2000px;
+}
+.catfish{
+    position: sticky;
+    height: 100px;
+    top: calc( 100vh - 90px );
+}
+.banner{
+    min-width: 360px;
+    max-width: 1024px;
+    height: 90px;
+    background-color: #273593;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px 10px 5px 6px;
+    position: relative;
+    overflow: hidden;
+}
+.image{
+    width: 115px;
+    height: 81px;
+}
+.sneaker{
+    background-image: url(../images/sneakers360pxw.png);
+    width: 115px;
+    height: 81px;
+    position: absolute;
+    z-index: 10;
+    animation-name: move;
+    animation-duration: 5s;
+    animation-delay: 0s;
+    animation-iteration-count: infinite;
+    animation-direction: reverse;
+    animation-timing-function: linear;
+}
+.girl{
+    background-image: url(../images/girl360pxw.png);
+    width: 117px;
+    height: 112px;
+    position: absolute;
+    top: -2px; 
+    animation-name: move;
+    animation-duration: 5s;
+    animation-delay: -2.5s;
+    animation-iteration-count: infinite;
+    animation-direction: reverse;
+    animation-timing-function: linear;
+    z-index: 10;
+}
+.waves{
+    background-image: url(../images/waves.png);
+    width: 88px;
+    height: 29px;
+    position: absolute;
+    top: 53px;
+    left: 42px;
+    z-index: 5;
+}
+.dugger{
+    background-image: url(../images/dagger.png);
+    width: 12px;
+    height: 12px;
+    position: absolute;
+    top: 3px;
+    left: 120px;
+}
+.info{
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
+    text-align: center;
+    height: 39px;
+}
+.info h1{
+    font-size: 27px;
+    color: #FFC400;
+}
+.info h2{
+    font-size: 12px;
+    color: #fff;
+    text-transform: uppercase;
+}
+.info__sneaker{
+    animation-name: move;
+    animation-duration: 5s;
+    animation-delay: 0s;
+    animation-iteration-count: infinite;
+    animation-direction: forwards;
+    animation-timing-function: linear;
+    position: absolute;
+    left: 40%;
+    transform: translate(-40%, 0);
+}
+.info__girl{
+    animation-name: move;
+    animation-duration: 5s;
+    animation-delay: -2.5s;
+    animation-iteration-count: infinite;
+    animation-direction: forwards;
+    animation-timing-function: linear;
+    position: absolute;
+    left: 40%;
+    transform: translate(-40%, 0);
+}
+.circle{
+    width: 22px;
+    height: 22px;
+    border-radius: 50%;
+    background-color: #FFC400;
+    position: absolute;
+    bottom: 9px;
+    right: 78px;
+}
+.button{
+    width: 66px;
+    height: 40px;
+    outline: none;
+    color: #273593;
+    border-radius: 11px;
+    text-transform: uppercase;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
+    border: 0px;
+
+    animation-name: button-flicker;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-delay: 2.5s;
+}
+.dots{
+    background-image: url(../images/dots360w.png);
+    width: 37px;
+    height: 35px;
+    position: absolute;
+    top: -17px;
+    right: -18px;
+}
+.closebtn{
+    width: 22px;
+    height: 22px;
+    position: absolute;
+    top: 0px;
+    right: 0;
+    border: 1px solid #FFC400;
+    border-radius: 50%;
+    background-color: #273593;
+    color: #FFC400;
+    outline: none;
+}
+.closed {
+    animation-name: closed;
+    animation-duration: 2s;
+    animation-timing-function: linear;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+}
+
+
+@media(min-width:768px){
+    .banner{
+        padding: 0px 42px 0px 42px;
+    }
+    .image{
+        width: 158px;
+        height: 111px;
+    }
+    .sneaker{
+        background-image: url(../images/sneaker.png);
+        width: 158px;
+        height: 111px;
+    }
+    .girl{
+        background-image: url(../images/girl768.png);
+        width: 159px;
+        height: 151px;
+        top: -18px;
+    }
+    .waves{
+        background-image: url(../images/waves768.png);
+        width: 109px;
+        height: 36px;
+        position: absolute;
+        top:52px;
+        left: 117px;
+        z-index: 5;
+    }
+    .dugger{
+        background-image: url(../images/dagger768.png);
+        width: 28px;
+        height: 28px;
+        top: 5px;
+        left: 252px;
+    }
+    .info{
+        height: 68px;
+    }
+    .info h1{
+        font-size: 48px;
+    }
+    .info h2{
+        font-size: 20px;
+    }
+    .button{
+        width: 158px;
+        height: 37px;
+        border-radius: 20px;
+        font-size: 25px;
+    }
+    .dots{
+        background-image: url(../images/dots728px.png);
+        width: 46px;
+        height: 44px;
+        position: absolute;
+        top: 23px;
+        right: -18px;
+    }
+    .circle{
+        width: 26px;
+        height: 26px;
+        right: 202px;
+        bottom: 9px;
+    }
+}
+
+@media(min-width:1024px){
+    .banner{
+        padding: 0px 88px 0px 109px;
+        margin: 0 auto;
+    }
+    .waves{
+        left: 187px;
+    }
+    .dugger{
+        left: 335px;
+    }
+    .dots{
+        right: 3px;
+    }
+    .circle{
+        bottom: 9px;
+        right: 302px;
+    }
+}
+
+@keyframes button-flicker {
+    0%   { transform: scale(1); }
+    10%   { transform: scale(1); }
+    20%   { transform: scale(1); }
+    30%   { transform: scale(1); }
+    40%   { transform: scale(1); }
+    48%  { transform: scale(1.2); }
+    49%  { transform: scale(1); }
+    50%  { transform: scale(1.2); }
+    51%  { transform: scale(1); }
+    52%  { transform: scale(1.2); }
+    60%  { transform: scale(1); }
+    70%  { transform: scale(1); }
+    80%  { transform: scale(1); }
+    90%  { transform: scale(1); }
+    100% { transform: scale(1); }
+  }
+@keyframes move {
+    0%   { transform: translateY(-900px); }
+    25%  { transform: translateY(0px);  }
+    50%  { transform: translateY(0px);  }
+    75%  { transform: translateY(0px);  }
+    100% { transform: translateY(900px); }
+}
+@keyframes closed {
+    0% {transform: translateY(0px);}
+    100% {transform: translateY(100px);}
+}

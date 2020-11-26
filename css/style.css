@@ -5,9 +5,9 @@ body{
     height: 2000px;
 }
 .catfish{
-    position: sticky;
-    height: 100px;
-    top: calc( 100vh - 90px );
+    position: fixed;
+    bottom: 0;
+    width: 100%;
 }
 .banner{
     min-width: 360px;
@@ -158,6 +158,7 @@ body{
     animation-timing-function: linear;
     animation-iteration-count: 1;
     animation-fill-mode: forwards;
+    text-align: center;
 }
 
 
@@ -210,6 +211,7 @@ body{
         height: 37px;
         border-radius: 20px;
         font-size: 25px;
+        z-index: 10;
     }
     .dots{
         background-image: url(../images/dots728px.png);
@@ -228,6 +230,9 @@ body{
 }
 
 @media(min-width:1024px){
+    .catfish{
+        /* margin: 0 auto; */
+    }
     .banner{
         padding: 0px 88px 0px 109px;
         margin: 0 auto;

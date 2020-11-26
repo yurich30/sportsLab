@@ -141,11 +141,6 @@ body{
     top: -17px;
     right: -18px;
 }
-.close{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
 .closebtn{
     width: 22px;
     height: 22px;
@@ -157,6 +152,9 @@ body{
     background-color: #273593;
     color: #FFC400;
     outline: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 .closed {
     animation-name: closed;

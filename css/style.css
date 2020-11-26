@@ -119,6 +119,7 @@ body{
     width: 66px;
     height: 40px;
     outline: none;
+    background-color: #fff;
     color: #273593;
     border-radius: 11px;
     text-transform: uppercase;
